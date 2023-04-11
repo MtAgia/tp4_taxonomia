@@ -13,8 +13,9 @@ las propiedades mediante un formulario, también agregar los botones “mostrar 
 indicar en un alert el resultado de la función correspondiente.
 */
 
-let btnSubir = document.getElementById(`btnSubir`).addEventListener(`click`, subirElementos);
+//let btnSubir = document.getElementById(`btnSubir`).addEventListener(`click`, subirElementos);
 let btnEdad = document.getElementById(`btnEdad`).addEventListener(`click`, revisarEdad);
+let formulario = document.getElementById(`fromPrincipal`).addEventListener(`submit`, leerFrom);
 class Persona {
   //privadas
   #nombre;
@@ -111,6 +112,10 @@ let inputEdad = document.getElementById(`edad`);
 let inputPeso = document.getElementById(`peso`);
 let inputAltura = document.getElementById(`altura`);
 
+function leerFrom(e){
+  e.preventDefault();
+  subirElementos();
+}
 function revisarEdad() {
   console.log(parseInt(inputEdad.value));
   if (parseInt(inputEdad.value) >= 18) {
@@ -144,3 +149,4 @@ function subirElementos() {
     parrafo.className = "text-center text-info"
     seccion.appendChild(parrafo)
 }
+

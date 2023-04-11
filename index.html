@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,24 +21,27 @@
     <main>
       <h1 class="text-center text-info">Ingrese Informacion</h1>
       <article class="d-flex justify-content-center">
-        <form class="d-flex flex-column">
+        <form class="d-flex flex-column" id="fromPrincipal">
           <input
             type="text"
-            class="my-2 campo text-center text-dark"
+            class="my-2 campo text-center text-dark form-control"
             placeholder="ingrese nombre"
             id="nombre"
+            required
           />
           <input
             type="number"
-            class="my-2 campo text-center"
+            class="my-2 campo text-center form-control"
             placeholder="ingrese edad"
             id="edad"
+            required
           />
           <input
             type="number"
-            class="my-2 campo text-center"
+            class="my-2 campo text-center form-control"
             placeholder="ingrese dni"
             id="dni"
+            required
           />
 
           <p class="text-center text-info">Ingrese Sexo</p>
@@ -56,24 +59,27 @@
           </div>
           <input
             type="number"
-            class="my-2 campo text-center"
+            class="my-2 campo text-center form-control"
             placeholder="peso basado kg"
             id="peso"
+            required
           />
           <input
             type="number"
-            class="my-2 campo text-center"
+            class="my-2 campo text-center form-control"
             placeholder="altura"
             id="altura"
+            required
           />
           <input
             type="month"
-            class="my-2 campo text-center"
+            class="my-2 campo text-center form-control"
             placeholder="año nacimiento"
             id="nacimiento"
+            required
           />
-          <button class="bg-info " id="btnSubir" type="button">Subir</button>
-          <button class="bg-info " id="btnEdad" type="button">mayor de edad ? </button>
+          <button class="bg-info " id="btnSubir" type="submit">Subir</button>
+          <button class="bg-info " id="btnEdad" type="submit">mayor de edad ? </button>
         </form>
       </article>
       <section id="seccionNueva">
